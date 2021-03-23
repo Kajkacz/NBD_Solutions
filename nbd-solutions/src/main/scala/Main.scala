@@ -1,5 +1,8 @@
 object Main extends App {
 // Ćwiczenia 1
+  println(
+    "####################################\nPierwszy zestaw ćwiczeń\n####################################"
+  )
 // Zadanie 1
   var weekdays: List[String] = List(
     "Monday",
@@ -154,17 +157,90 @@ object Main extends App {
   }
   println(
     "Some numbers " + filter_out(numbers.map(num => num.toDouble))
-  ) //Czemu tu nie potrzeba nawiasów
+  ) //Czemu tu nie potrzeba nawiasów?!
 // Ćwiczenia 2
+  println(
+    "####################################\nDrugi zestaw ćwiczeń\n####################################"
+  )
 // Zadanie 1
+  def is_it_over(day: String): String = day match {
+    case "Saturday" | "Sunday"                                      => "Work"
+    case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday" => "Weekend"
+    case _                                                          => "No such day"
+  }
+  println(
+    "Monday is " + is_it_over("Monday")
+  )
+  println(
+    "Saturday is " + is_it_over("Saturday")
+  )
+  println(
+    "Blabla is " + is_it_over("Blabla")
+  ) // IS IT OK THAT THIS IS NOT CASE INSENSITIVE
 // Zadanie 2
-// Zadanie 3
+  class BankAccount(private var balance: Int = 0) {
+    def deposit(change: Int): Unit = {
+      balance += change
+      println("Current balance : " + balance)
+    }
+    def withdraw(change: Int): Unit = {
+      balance -= change
+      println("Current balance : " + balance)
+    }
+  }
+  val myAccount = new BankAccount
+  myAccount.deposit(200)
+  myAccount.withdraw(100)
+  val wifesAccount = new BankAccount(1000)
+  wifesAccount.deposit(1000)
+  wifesAccount.withdraw(500)
+// Zadanie 3 //IDK o co tu chodzi //TODO FIX THIS
+  class Person(var name: String, var surname: String)
+  val me = new Person("Kajetan", "Kaczmarek")
+  val some_nerd = new Person("Konrad", "Dymowski")
+  val random_cutie = new Person("Amelia", "Kaczmarek")
+  val stranger = new Person("???", "???")
+  // def greet(someone: Person): String = someone match {
+  //   case Person(name, "Dymowski") =>
+  //     s"Well well well, if it aint $name"
+  //   case Person("Kajetan", "Kaczmarek") => s"Bonjour Kajetan"
+  //   case Person("Amelia", "Kaczmarek")  => s"Ohaio Amelia"
+  //   case _                              => "He...Hello?"
+  // }
+  // println(greet(me))
+  // println(greet(some_nerd))
+  // println(greet(random_cutie))
+  // println(greet(stranger))
 // Zadanie 4
+  def triple_down(value: Int, action: (Int) => Int): Int = {
+    action(action(action(value)))
+  }
+  println(triple_down(1, a => a + 1))
+  println(triple_down(2, a => a * 2))
 // Zadanie 5
-// Zadanie 6
-// Zadanie 7
-// Zadanie 8
-// Zadanie 9
-// Zadanie 10
+  trait Student { val tax = 0 }
+  trait Worker {
+    val salary: Int // Czy to jest getter is setter?
+    val tax: Double = 0.2 * salary.toDouble // Czy to jest getter is setter?
+  }
+  trait Teacher extends Worker {
+    override val tax = 0.1 * salary // Czy to jest getter is setter?
+  }
 
+  class Person_2(
+      private var name: String,
+      private var surname: String,
+      private var tax: Double
+  )
+
+  var person_1 = new Person_2("A", "B", 0.3) with Student
+  var person_2 =
+    new Person_2("C", "D", 0.15) with Worker(salary = 20) // HOW TO DO THIS
+  var person_3 = new Person_2("E", "F", 0.32) with Teacher
+  var person_4 = new Person_2("G", "G", 0.23) with Student with Worker
+  var person_5 = new Person_2("I", "J", 0.08) with Worker with Student
+  def print_person(person: Person_2, salary: Int = 0): Unit = {
+    println(s"$person.name")
+  }
+  print_person(person_1)
 }
