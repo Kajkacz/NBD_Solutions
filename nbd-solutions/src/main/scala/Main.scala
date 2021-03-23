@@ -125,7 +125,8 @@ object Main extends App {
     "The author of Frankenstein is " + option_demo(library.get("Frankenstein"))
   )
 // Zadanie 8
-  var numbers = List[Int](0, 2, 4, 6, 2321, 21, 0, 23, 0, 6, 43, 2, 34, 0, 32)
+  var numbers = List[Int](0, 2, 4, 6, 2321, 21, 0, 23, 0, 6, 43, 2, 34, 0, 32,
+    -3, -7, -1, -20, 0, -14)
   def remove_zeroes(
       int_list: List[Int],
       filtered: List[Int] = List[Int]()
@@ -149,9 +150,11 @@ object Main extends App {
 // Zadanie 10
 
   def filter_out(nums: List[Double]) = {
-    nums.filter(_ < 12 && _ > -5)
+    nums.filter(x => x < 12 && x > -5)
   }
-  println("Some numbers " + filter_out(numbers))
+  println(
+    "Some numbers " + filter_out(numbers.map(num => num.toDouble))
+  ) //Czemu tu nie potrzeba nawiasów
 // Ćwiczenia 2
 // Zadanie 1
 // Zadanie 2
