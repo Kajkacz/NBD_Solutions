@@ -1,1 +1,1 @@
-printjson(db.people.findOne().toArray())
+printjson(db.people.findOne())

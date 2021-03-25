@@ -1,0 +1,8 @@
+MongoDB shell version v4.4.4
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c28dc20e-f48f-4722-b214-c6e9aa738dd3") }
+MongoDB server version: 4.4.4
+uncaught exception: SyntaxError: missing } after property list :
+@zapytanie_5.js:2:79
+failed to load: zapytanie_5.js
+exiting with code -3

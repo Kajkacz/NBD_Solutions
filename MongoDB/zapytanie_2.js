@@ -1,1 +1,1 @@
-db.people.findOne({"sex":"Female","nationality":"China"})
+printjson(db.people.findOne({"sex":"Female","nationality":"China"}))
