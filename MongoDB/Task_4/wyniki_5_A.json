@@ -1,0 +1,608 @@
+MongoDB shell version v4.4.4
+connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("6e1f634d-0af4-4815-acdc-7cd0050f14a5") }
+MongoDB server version: 4.4.4
+{
+	"_batch" : [
+		{
+			"_id" : "PKR",
+			"sum_credit" : 37876,
+			"avg_credit" : 4734.5
+		},
+		{
+			"_id" : "EGP",
+			"sum_credit" : 11158.6,
+			"avg_credit" : 5579.3
+		},
+		{
+			"_id" : "AFN",
+			"sum_credit" : 33510.98,
+			"avg_credit" : 5585.163333333334
+		},
+		{
+			"_id" : "ZMW",
+			"sum_credit" : 11139.12,
+			"avg_credit" : 5569.56
+		},
+		{
+			"_id" : "KRW",
+			"sum_credit" : 26759.64,
+			"avg_credit" : 6689.91
+		},
+		{
+			"_id" : "EUR",
+			"sum_credit" : 490182.94,
+			"avg_credit" : 4901.8294
+		},
+		{
+			"_id" : "GBP",
+			"sum_credit" : 12298.38,
+			"avg_credit" : 6149.19
+		},
+		{
+			"_id" : "ZWL",
+			"sum_credit" : 11584.34,
+			"avg_credit" : 5792.17
+		},
+		{
+			"_id" : "KZT",
+			"sum_credit" : 7577.9,
+			"avg_credit" : 3788.95
+		},
+		{
+			"_id" : "JPY",
+			"sum_credit" : 121889.48,
+			"avg_credit" : 5078.7283333333335
+		},
+		{
+			"_id" : "NIO",
+			"sum_credit" : 19942.56,
+			"avg_credit" : 4985.64
+		},
+		{
+			"_id" : "MXN",
+			"sum_credit" : 100458,
+			"avg_credit" : 5022.9
+		},
+		{
+			"_id" : "MNT",
+			"sum_credit" : 43431.22,
+			"avg_credit" : 5428.9025
+		},
+		{
+			"_id" : "MWK",
+			"sum_credit" : 7148.84,
+			"avg_credit" : 3574.42
+		},
+		{
+			"_id" : "RWF",
+			"sum_credit" : 9265.76,
+			"avg_credit" : 4632.88
+		},
+		{
+			"_id" : "SEK",
+			"sum_credit" : 141680.38,
+			"avg_credit" : 5060.013571428572
+		},
+		{
+			"_id" : "XOF",
+			"sum_credit" : 35764.1,
+			"avg_credit" : 5960.683333333333
+		},
+		{
+			"_id" : "HRK",
+			"sum_credit" : 48709.64,
+			"avg_credit" : 4870.964
+		},
+		{
+			"_id" : "PHP",
+			"sum_credit" : 237212.56,
+			"avg_credit" : 4941.928333333333
+		},
+		{
+			"_id" : "PEN",
+			"sum_credit" : 37289.88,
+			"avg_credit" : 4661.235
+		},
+		{
+			"_id" : "NPR",
+			"sum_credit" : 11584.52,
+			"avg_credit" : 5792.26
+		},
+		{
+			"_id" : "ILS",
+			"sum_credit" : 32590.98,
+			"avg_credit" : 5431.83
+		},
+		{
+			"_id" : "DOP",
+			"sum_credit" : 41349.479999999996,
+			"avg_credit" : 5168.6849999999995
+		},
+		{
+			"_id" : "CAD",
+			"sum_credit" : 116751.2,
+			"avg_credit" : 5306.872727272727
+		},
+		{
+			"_id" : "LYD",
+			"sum_credit" : 17529.98,
+			"avg_credit" : 4382.495
+		},
+		{
+			"_id" : "HNL",
+			"sum_credit" : 33029.18,
+			"avg_credit" : 5504.863333333334
+		},
+		{
+			"_id" : "CNY",
+			"sum_credit" : 941400.76,
+			"avg_credit" : 4954.740842105263
+		},
+		{
+			"_id" : "RSD",
+			"sum_credit" : 8553.12,
+			"avg_credit" : 4276.56
+		},
+		{
+			"_id" : "GTQ",
+			"sum_credit" : 11612.6,
+			"avg_credit" : 5806.3
+		},
+		{
+			"_id" : "CZK",
+			"sum_credit" : 74312.84,
+			"avg_credit" : 4644.5525
+		},
+		{
+			"_id" : "NZD",
+			"sum_credit" : 10656.92,
+			"avg_credit" : 5328.46
+		},
+		{
+			"_id" : "ALL",
+			"sum_credit" : 6650.96,
+			"avg_credit" : 3325.48
+		},
+		{
+			"_id" : "IQD",
+			"sum_credit" : 8538.78,
+			"avg_credit" : 4269.39
+		},
+		{
+			"_id" : "NOK",
+			"sum_credit" : 9547.32,
+			"avg_credit" : 4773.66
+		},
+		{
+			"_id" : "XAF",
+			"sum_credit" : 28189.32,
+			"avg_credit" : 4698.22
+		},
+		{
+			"_id" : "PYG",
+			"sum_credit" : 9749.38,
+			"avg_credit" : 4874.69
+		},
+		{
+			"_id" : "BYR",
+			"sum_credit" : 10191.58,
+			"avg_credit" : 5095.79
+		},
+		{
+			"_id" : "XPF",
+			"sum_credit" : 9518.14,
+			"avg_credit" : 4759.07
+		},
+		{
+			"_id" : "ARS",
+			"sum_credit" : 46484,
+			"avg_credit" : 4648.4
+		},
+		{
+			"_id" : "RUB",
+			"sum_credit" : 239498.3,
+			"avg_credit" : 4989.547916666666
+		},
+		{
+			"_id" : "MGA",
+			"sum_credit" : 29121.98,
+			"avg_credit" : 4853.663333333333
+		},
+		{
+			"_id" : "ISK",
+			"sum_credit" : 8632.82,
+			"avg_credit" : 4316.41
+		},
+		{
+			"_id" : "CLP",
+			"sum_credit" : 42017.9,
+			"avg_credit" : 5252.2375
+		},
+		{
+			"_id" : "BOB",
+			"sum_credit" : 10526.6,
+			"avg_credit" : 5263.3
+		},
+		{
+			"_id" : "COP",
+			"sum_credit" : 39493.46,
+			"avg_credit" : 4936.6825
+		},
+		{
+			"_id" : "BRL",
+			"sum_credit" : 99264.04000000001,
+			"avg_credit" : 4512.001818181819
+		},
+		{
+			"_id" : "USD",
+			"sum_credit" : 149361.96,
+			"avg_credit" : 4978.732
+		},
+		{
+			"_id" : "ZAR",
+			"sum_credit" : 23581.84,
+			"avg_credit" : 3930.306666666667
+		},
+		{
+			"_id" : "YER",
+			"sum_credit" : 27425,
+			"avg_credit" : 4570.833333333333
+		},
+		{
+			"_id" : "NGN",
+			"sum_credit" : 49892.46,
+			"avg_credit" : 4157.705
+		},
+		{
+			"_id" : "CUP",
+			"sum_credit" : 30034.68,
+			"avg_credit" : 5005.78
+		},
+		{
+			"_id" : "KYD",
+			"sum_credit" : 7521.78,
+			"avg_credit" : 3760.89
+		},
+		{
+			"_id" : "UZS",
+			"sum_credit" : 7146.06,
+			"avg_credit" : 3573.03
+		},
+		{
+			"_id" : "MAD",
+			"sum_credit" : 7637.7,
+			"avg_credit" : 3818.85
+		},
+		{
+			"_id" : "PLN",
+			"sum_credit" : 181541.56,
+			"avg_credit" : 5042.821111111111
+		},
+		{
+			"_id" : "VUV",
+			"sum_credit" : 12836.54,
+			"avg_credit" : 6418.27
+		},
+		{
+			"_id" : "TZS",
+			"sum_credit" : 14104.740000000002,
+			"avg_credit" : 3526.1850000000004
+		},
+		{
+			"_id" : "IRR",
+			"sum_credit" : 53008.479999999996,
+			"avg_credit" : 4417.373333333333
+		},
+		{
+			"_id" : "BWP",
+			"sum_credit" : 8152.58,
+			"avg_credit" : 4076.29
+		},
+		{
+			"_id" : "ETB",
+			"sum_credit" : 10872.22,
+			"avg_credit" : 5436.11
+		},
+		{
+			"_id" : "TJS",
+			"sum_credit" : 8175.42,
+			"avg_credit" : 4087.71
+		},
+		{
+			"_id" : "BGN",
+			"sum_credit" : 42401.76,
+			"avg_credit" : 5300.22
+		},
+		{
+			"_id" : "MKD",
+			"sum_credit" : 7670.1,
+			"avg_credit" : 3835.05
+		},
+		{
+			"_id" : "UAH",
+			"sum_credit" : 80943.68000000001,
+			"avg_credit" : 5058.9800000000005
+		},
+		{
+			"_id" : "SRD",
+			"sum_credit" : 10573.36,
+			"avg_credit" : 5286.68
+		},
+		{
+			"_id" : "IDR",
+			"sum_credit" : 647845.18,
+			"avg_credit" : 4907.918030303031
+		},
+		{
+			"_id" : "CDF",
+			"sum_credit" : 24457.6,
+			"avg_credit" : 6114.4
+		},
+		{
+			"_id" : "AMD",
+			"sum_credit" : 49218.66,
+			"avg_credit" : 4921.866
+		},
+		{
+			"_id" : "MMK",
+			"sum_credit" : 9258.84,
+			"avg_credit" : 4629.42
+		},
+		{
+			"_id" : "MYR",
+			"sum_credit" : 9562.24,
+			"avg_credit" : 4781.12
+		},
+		{
+			"_id" : "VND",
+			"sum_credit" : 72320.52,
+			"avg_credit" : 4520.0325
+		},
+		{
+			"_id" : "THB",
+			"sum_credit" : 46043.92,
+			"avg_credit" : 4604.392
+		},
+		{
+			"_id" : "VEF",
+			"sum_credit" : 16666.56,
+			"avg_credit" : 4166.64
+		}
+	],
+	"_useReadCommands" : true,
+	"_cursorid" : NumberLong(0),
+	"_batchSize" : undefined,
+	"_maxAwaitTimeMS" : undefined,
+	"_txnNumber" : undefined,
+	"_ns" : "nbd.people",
+	"_db" : nbd,
+	"_collName" : "people",
+	"_cursorHandle" : {
+		
+	},
+	"isClosed" : function() {
+    if (this._useReadCommands) {
+        return bsonWoCompare({_: this._cursorid}, {_: NumberLong(0)}) === 0;
+    }
+    return this._cursor.isClosed();
+},
+	"isExhausted" : function() {
+    return this.isClosed() && this.objsLeftInBatch() === 0;
+},
+	"close" : function() {
+    if (!this._useReadCommands) {
+        this._cursor.close();
+    } else if (bsonWoCompare({_: this._cursorid}, {_: NumberLong(0)}) !== 0) {
+        var killCursorCmd = {
+            killCursors: this._collName,
+            cursors: [this._cursorid],
+        };
+        var cmdRes = this._db.runCommand(killCursorCmd);
+        if (cmdRes.ok != 1) {
+            throw _getErrorWithCode(cmdRes, "killCursors command failed: " + tojson(cmdRes));
+        }
+
+        this._cursorHandle.zeroCursorId();
+        this._cursorid = NumberLong(0);
+    }
+},
+	"_updatePostBatchResumeToken" : function(cursorObj) {
+    if (cursorObj.postBatchResumeToken) {
+        this._postBatchResumeToken = cursorObj.postBatchResumeToken;
+        if ((cursorObj.firstBatch || cursorObj.nextBatch).length === 0) {
+            this._resumeToken = this._postBatchResumeToken;
+        }
+        this._isChangeStream = true;
+    }
+},
+	"_runGetMoreCommand" : function() {
+    // Construct the getMore command.
+    var getMoreCmd = {getMore: this._cursorid, collection: this._collName};
+
+    if (this._batchSize) {
+        getMoreCmd["batchSize"] = this._batchSize;
+    }
+
+    // maxAwaitTimeMS is only supported when using read commands.
+    if (this._maxAwaitTimeMS) {
+        getMoreCmd.maxTimeMS = this._maxAwaitTimeMS;
+    }
+
+    if (this._txnNumber) {
+        getMoreCmd.txnNumber = NumberLong(this._txnNumber);
+        getMoreCmd.autocommit = false;
+    }
+
+    // Deliver the getMore command, and check for errors in the response.
+    var cmdRes = this._db.runCommand(getMoreCmd);
+    assert.commandWorked(cmdRes, () => "getMore command failed: " + tojson(cmdRes));
+
+    if (this._ns !== cmdRes.cursor.ns) {
+        throw Error("unexpected collection in getMore response: " + this._ns +
+                    " != " + cmdRes.cursor.ns);
+    }
+
+    if (!cmdRes.cursor.id.compare(NumberLong("0"))) {
+        this._cursorHandle.zeroCursorId();
+        this._cursorid = NumberLong("0");
+    } else if (this._cursorid.compare(cmdRes.cursor.id)) {
+        throw Error("unexpected cursor id: " + this._cursorid.toString() +
+                    " != " + cmdRes.cursor.id.toString());
+    }
+
+    // If the command result represents a change stream cursor, update our postBatchResumeToken.
+    this._updatePostBatchResumeToken(cmdRes.cursor);
+
+    // Successfully retrieved the next batch.
+    this._batch = cmdRes.cursor.nextBatch.reverse();
+},
+	"_hasNextUsingCommands" : function() {
+    assert(this._useReadCommands);
+
+    if (!this._batch.length) {
+        if (!this._cursorid.compare(NumberLong("0"))) {
+            return false;
+        }
+
+        this._runGetMoreCommand();
+    }
+
+    return this._batch.length > 0;
+},
+	"hasNext" : function() {
+    if (this._useReadCommands) {
+        return this._hasNextUsingCommands();
+    }
+
+    return this._batch.length || this._cursor.hasNext();
+},
+	"next" : function() {
+    if (this._batch.length) {
+        // Pop the next result off the batch.
+        const nextDoc = this._batch.pop();
+        if (this._isChangeStream) {
+            // If this is the last result in the batch, the postBatchResumeToken becomes the current
+            // resume token for the cursor. Otherwise, the resume token is the _id of 'nextDoc'.
+            this._resumeToken = (this._batch.length ? nextDoc._id : this._postBatchResumeToken);
+        }
+        return nextDoc;
+    } else if (this._useReadCommands) {
+        // Have to call hasNext() here, as this is where we may issue a getMore in order to retrieve
+        // the next batch of results.
+        if (!this.hasNext())
+            throw Error("error hasNext: false");
+        return this._batch.pop();
+    } else {
+        if (!this._cursor.hasNext())
+            throw Error("error hasNext: false");
+
+        var ret = this._cursor.next();
+        if (ret.$err)
+            throw _getErrorWithCode(ret, "error: " + tojson(ret));
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function() {
+    if (this._useReadCommands) {
+        return this._batch.length;
+    } else if (this._batch.length) {
+        return this._batch.length;
+    } else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"getId" : function() {
+    return this._cursorid;
+},
+	"getResumeToken" : function() {
+    // Return the most recent recorded resume token, if such a token exists.
+    return this._resumeToken;
+},
+	"help" : function() {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results");
+    print("\t.forEach( func )");
+    print("\t.map( func )");
+    print("\t.hasNext()");
+    print("\t.next()");
+    print(
+        "\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)");
+    print("\t.itcount() - iterates through documents and counts them");
+    print(
+        "\t.getResumeToken() - for a change stream cursor, obtains the most recent valid resume token, if it exists.");
+    print("\t.pretty() - pretty print each document, possibly over multiple lines");
+    print("\t.close()");
+},
+	"toArray" : function() {
+    if (this._arr)
+        return this._arr;
+
+    var a = [];
+    while (this.hasNext())
+        a.push(this.next());
+    this._arr = a;
+    return a;
+},
+	"forEach" : function(func) {
+    while (this.hasNext())
+        func(this.next());
+},
+	"map" : function(func) {
+    var a = [];
+    while (this.hasNext())
+        a.push(func(this.next()));
+    return a;
+},
+	"itcount" : function() {
+    var num = 0;
+
+    // Track how many bytes we've used this cursor to iterate iterated.  This function can be called
+    // with some very large cursors.  SpiderMonkey appears happy to allow these objects to
+    // accumulate, so regular gc() avoids an overly large memory footprint.
+    //
+    // TODO: migrate this function into c++
+    var bytesSinceGC = 0;
+
+    while (this.hasNext()) {
+        num++;
+        var nextDoc = this.next();
+        bytesSinceGC += Object.bsonsize(nextDoc);
+
+        // Garbage collect every 10 MB.
+        if (bytesSinceGC > (10 * 1024 * 1024)) {
+            bytesSinceGC = 0;
+            gc();
+        }
+    }
+    return num;
+},
+	"shellPrint" : function() {
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while (this.hasNext() && n < DBQuery.shellBatchSize) {
+            var s = this._prettyShell ? tojson(this.next()) : tojson(this.next(), "", true);
+            print(s);
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+        if (this.hasNext()) {
+            print("Type \"it\" for more");
+            ___it___ = this;
+        } else {
+            ___it___ = null;
+        }
+    } catch (e) {
+        print(e);
+    }
+},
+	"pretty" : function() {
+    this._prettyShell = true;
+    return this;
+}
+}
