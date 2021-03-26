@@ -1,0 +1,13 @@
+Część 1
+1) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]-(sand {name:"Sandakphu"}))RETURN p
+2) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]-(sand {name:"Sandakphu"})) WHERE ALL (x IN RELATIONSHIPS(p) WHERE x.winter = "true") RETURN p
+3a) IDK
+3b) IDK
+Część 2
+4) MATCH (ap:Airport) -[c]- (:Flight) return ap,count(c) ORDER BY count(c) DESC
+5) IDK WIP: MATCH (:Airport {name: "LAX"}) <-[:ORIGIN]- (fl:Flight) -[:DESTINATION]->(ap:Airport) fl <-[:ASSIGN]-(ticket:ticket) return ap
+6) 
+7) 
+8) 
+9) 
+10) 
