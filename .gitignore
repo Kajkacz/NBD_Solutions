@@ -3,3 +3,7 @@
 nbd-solutions/.bloop
 nbd-solutions/project
 nbd-solutions/target
+.bsp/sbt.json
+project
+target/
+.~lock*
