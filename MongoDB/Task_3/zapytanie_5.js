@@ -1,2 +1,1 @@
-printjson(db.people.find({}, {"first_name" : 1,"last_name" : 1, "location.city" : 1}).toArray()) //TODO Jak to poprawić dla tego XXI wieku narodzin?  
-db.people.find({}, {"first_name" : 1,"last_name" : 1, "location" : {"city" : 1})    ///CZEMU TO NIE DZIAŁA 
+printjson(db.people.find({ $where: function () { return this.birth_date > "2000-01-011T00:00:00Z" } }, { "first_name": 1, "last_name": 1, "location": { "city": 1 } }).toArray()) //TODO Czy to jest ładnie?
