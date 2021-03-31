@@ -102,9 +102,7 @@ object Main extends App {
   val products: Map[String, Double] =
     Map("Apple" -> 10, "Banana" -> 5, "Plutonium" -> 250000)
   val discounted =
-    products.map(product =>
-      (product._1, product._2 * 0.9)
-    ) // JAK TO ROZWINĄĆ W DWIE ZMIENNE
+    products.view.mapValues(price => price * 0.9).toMap
   println(s"Discounted products : from $products to  $discounted")
 // Zadanie 6
   val diff_types = ("Apple", 42, 4.231512)
@@ -157,7 +155,7 @@ object Main extends App {
   }
   println(
     "Some numbers " + filter_out(numbers.map(num => num.toDouble))
-  ) //Czemu tu nie potrzeba nawiasów?!
+  )
 // Ćwiczenia 2
   println(
     "####################################\nDrugi zestaw ćwiczeń\n####################################"
@@ -176,7 +174,7 @@ object Main extends App {
   )
   println(
     "Blabla is " + is_it_over("Blabla")
-  ) // IS IT OK THAT THIS IS NOT CASE INSENSITIVE
+  )
 // Zadanie 2
   class BankAccount(private var balance: Int = 0) {
     def deposit(change: Int): Unit = {
@@ -194,23 +192,23 @@ object Main extends App {
   val wifesAccount = new BankAccount(1000)
   wifesAccount.deposit(1000)
   wifesAccount.withdraw(500)
-// Zadanie 3 //IDK o co tu chodzi //TODO FIX THIS
-  class Person(var name: String, var surname: String)
+// Zadanie 3
+  case class Person(var name: String, var surname: String)
   val me = new Person("Kajetan", "Kaczmarek")
   val some_nerd = new Person("Konrad", "Dymowski")
   val random_cutie = new Person("Amelia", "Kaczmarek")
   val stranger = new Person("???", "???")
-  // def greet(someone: Person): String = someone match {
-  //   case Person(name, "Dymowski") =>
-  //     s"Well well well, if it aint $name"
-  //   case Person("Kajetan", "Kaczmarek") => s"Bonjour Kajetan"
-  //   case Person("Amelia", "Kaczmarek")  => s"Ohaio Amelia"
-  //   case _                              => "He...Hello?"
-  // }
-  // println(greet(me))
-  // println(greet(some_nerd))
-  // println(greet(random_cutie))
-  // println(greet(stranger))
+  def greet(someone: Person): String = someone match {
+    case Person(name, "Dymowski") =>
+      s"Well well well, if it aint $name"
+    case Person("Kajetan", "Kaczmarek") => s"Bonjour Kajetan"
+    case Person("Amelia", "Kaczmarek")  => s"Ohaio Amelia"
+    case _                              => "He...Hello?"
+  }
+  println(greet(me))
+  println(greet(some_nerd))
+  println(greet(random_cutie))
+  println(greet(stranger))
 // Zadanie 4
   def triple_down(value: Int, action: (Int) => Int): Int = {
     action(action(action(value)))
@@ -218,29 +216,40 @@ object Main extends App {
   println(triple_down(1, a => a + 1))
   println(triple_down(2, a => a * 2))
 // Zadanie 5
-  trait Student { val tax = 0 }
-  trait Worker {
-    val salary: Int // Czy to jest getter is setter?
-    val tax: Double = 0.2 * salary.toDouble // Czy to jest getter is setter?
+  trait Student extends Person_2 { override def tax = 0 }
+  trait Worker extends Person_2 {
+    var _salary: Integer = 0
+    def salary() {
+      _salary
+    }
+    def salary_=(new_salary: Integer): Unit = {
+      _salary = new_salary
+    }
+    override def tax: Double =
+      0.2 * _salary.toDouble
   }
   trait Teacher extends Worker {
-    override val tax = 0.1 * salary // Czy to jest getter is setter?
+    override def tax = 0.1 * _salary
   }
 
-  class Person_2(
-      private var name: String,
-      private var surname: String,
-      private var tax: Double
-  )
-
-  var person_1 = new Person_2("A", "B", 0.3) with Student
-  var person_2 =
-    new Person_2("C", "D", 0.15) with Worker(salary = 20) // HOW TO DO THIS
-  var person_3 = new Person_2("E", "F", 0.32) with Teacher
-  var person_4 = new Person_2("G", "G", 0.23) with Student with Worker
-  var person_5 = new Person_2("I", "J", 0.08) with Worker with Student
-  def print_person(person: Person_2, salary: Int = 0): Unit = {
-    println(s"$person.name")
+  abstract class Person_2(
+      val name: String,
+      val surname: String
+  ) {
+    def tax(): Double
   }
-  print_person(person_1)
+  var person_1 = new Person_2("A", "B") with Student
+  var person_2 = new Person_2("C", "D") with Worker
+  person_2.salary = 1500
+  var person_3 = new Person_2("E", "F") with Teacher
+  var person_4 = new Person_2("G", "H") with Student with Worker
+  var person_5 = new Person_2("I", "J") with Worker with Student
+  person_4.salary = 1200
+  person_5.salary = 1500
+
+  def print_person(person: Person_2): Unit = {
+    println(s"${person.name} tax : ${person.tax}")
+  }
+  print_person(person_4) //This has tax cause it's a worker second
+  print_person(person_5) //This doesn't have tax cause it's a student second
 }
