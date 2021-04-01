@@ -1,13 +1,68 @@
 Część 1
-1) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]-(sand {name:"Sandakphu"}))RETURN p
-2) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]-(sand {name:"Sandakphu"})) WHERE ALL (x IN RELATIONSHIPS(p) WHERE x.winter = "true") RETURN p
-3a) IDK
-3b) IDK
+1) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"}))RETURN p
+2) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"})) WHERE ALL (x IN RELATIONSHIPS(p) WHERE x.winter = "true") RETURN p
+3a) //CZEMY TO DZIAŁA TYLKO Z KIERUNKIEM
+MATCH path=(darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"}) 
+WHERE ALL(route in relationships(path) WHERE route.winter = "true") 
+WITH path,reduce(totalDistance = 0, r IN relationships(path) | totalDistance + r.distance) AS totalDistance,
+RETURN path,totalDistance
+3b) // TO TROCHĘ NIE MA SENSU BO NIE MA TAKICH MIEJSC
+MATCH (darj {name:"Darjeeling"})-[:twowheeler*]->(target) 
+WHERE ALL(route in relationships(path) WHERE route.summer = "true") 
+RETURN target
 Część 2
 4) MATCH (ap:Airport) -[c]- (:Flight) return ap,count(c) ORDER BY count(c) DESC
-5) IDK WIP: MATCH (:Airport {name: "LAX"}) <-[:ORIGIN]- (fl:Flight) -[:DESTINATION]->(ap:Airport) fl <-[:ASSIGN]-(ticket:ticket) return ap
-6) 
-7) 
+
+SETUP FOR THE NEXT ONES // THIS SEEMS WRONG, ADDING RELATIONSHIPS FOR STUFF WE SHOULD JOIN
+
+MATCH (fl:Flight) <-[:ASSIGN*]-(tk:Ticket)
+with fl,MIN(tk.price) as cheapest
+SET fl.cheapestSeat = cheapest 
+
+MATCH (fl:Flight) <-[:ASSIGN*]-(tk:Ticket {class: "business"})
+SET fl.businessPrice  = tk.price 
+
+MATCH (fl:Flight) <-[:ASSIGN*]-(tk:Ticket {class: "firstClass"})
+SET fl.firstClassPrice  = tk.price 
+
+MATCH (fl:Flight) <-[:ASSIGN*]-(tk:Ticket {class: "economy"})
+SET fl.economyPrice  = tk.price 
+SET fl.cheapestSeat = tk.cheapestSeat
+
+MATCH 
+(a:Airport ) <-[:ORIGIN] -(f:Flight)-[:DESTINATION]->(b:Airport)
+create (a)-[r:FLIGHTEXIST {airline: f.airline,businessPrice: f.businessPrice,cheapestSeat: f.cheapestSeat,economyPrice: f.economyPrice,firstClassPrice: f.firstClassPrice}]->(b)
+
+5) 
+MATCH flights = ((:Airport {name: "LAX"}) -[:FLIGHTEXIST*..4]->(ap:Airport))
+WITH flights, reduce(totalPrice = 0, flight IN relationships(flights) |  totalPrice + flight.cheapestSeat)  as total
+WHERE total < 3000
+Return flights, total
+6)
+MATCH flights = ((:Airport {name: "LAX"}) -[:FLIGHTEXIST*..5]->(:Airport {name: "DAY"}))
+WITH flights, reduce(totalPrice = 0, flight IN relationships(flights) |  totalPrice + flight.cheapestSeat)  as total
+Return flights, total
+ORDER BY total
+7)
+MATCH flights = ((:Airport {name: "LAX"}) -[:FLIGHTEXIST*..4]->(ap:Airport {name: "DAY"}))
+WITH flights, reduce(totalPrice = 0, flight IN relationships(flights) |  totalPrice + flight.cheapestSeat)  as total
+ORDER BY total
+LIMIT 1
+Return flights, total
 8) 
+MATCH flights = ((:Airport {name: "LAX"}) -[:FLIGHTEXIST*..4]->(ap:Airport {name: "DAY"}))
+WITH flights, reduce(totalPrice = 0, flight IN relationships(flights) |  totalPrice + flight.businessPrice)  as total
+ORDER BY total
+LIMIT 1
+Return flights, total
 9) 
+MATCH (org:Airport)-[fl:FLIGHTEXIST]->(dest:Airport) 
+WITH fl.airline as airlines, org.name + '-'+ dest.name as path
+RETURN airlines,Count(Distinct path)
 10) 
+
+MATCH path = ((:Airport)-[:FLIGHTEXIST]->(:Airport)- [:FLIGHTEXIST]->(:Airport))
+WITH path, reduce(totalCost = 0, flight in relationships(path) | totalCost + flight.cheapestSeat) as total
+ORDER BY total ASC
+LIMIT 1
+RETURN path,total
