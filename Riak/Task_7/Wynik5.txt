@@ -1,0 +1,13 @@
+C:\Users\Kajkacz>curl -i -XPUT -d '{"b":2,"c":3.0,"4":null,"extra_field":420}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23919/keys/doc1?returnbody=true
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvp+5sFSKgUFdMIMpkTuPlaHk6O2bfFkA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23919>; rel="up"
+Last-Modified: Fri, 02 Apr 2021 16:42:28 GMT
+ETag: "4Gnvqcc6Mvt1zru9Wo64MD"
+Date: Fri, 02 Apr 2021 16:42:28 GMT
+Content-Type: application/json
+Content-Length: 36
+
+'{b:2,c:3.0,4:null,extra_field:420}'

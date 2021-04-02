@@ -1,0 +1,20 @@
+
+C:\Users\Kajkacz>curl -i -XDELETE http://localhost:8098/buckets/s23919/keys/XX68Mq7GjCtZoYSy2weaGx1Fw0S
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 02 Apr 2021 16:47:24 GMT
+Content-Type: application/json
+Content-Length: 0
+
+
+C:\Users\Kajkacz>curl -i http://127.0.0.1:8098/buckets/s23919/keys/XX68Mq7GjCtZoYSy2weaGx1Fw0S
+HTTP/1.1 404 Object Not Found
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvp+52H0mA4O6YAZTIlMeK8OcY7dv8mUBAA==
+X-Riak-Deleted: true
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Fri, 02 Apr 2021 16:47:27 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found

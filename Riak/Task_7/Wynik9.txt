@@ -1,0 +1,13 @@
+C:\Users\Kajkacz>curl -i http://127.0.0.1:8098/buckets/s23919/keys/XX68Mq7GjCtZoYSy2weaGx1Fw0S
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvp+52H0mA4O6YAZTImMeK4P/sds3+bIA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23919>; rel="up"
+Last-Modified: Fri, 02 Apr 2021 16:46:07 GMT
+ETag: "5y9d7doDmTfeEmDMEaKkAd"
+Date: Fri, 02 Apr 2021 16:46:56 GMT
+Content-Type: application/json
+Content-Length: 20
+
+'{test:without_key}'

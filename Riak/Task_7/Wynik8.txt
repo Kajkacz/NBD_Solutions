@@ -1,0 +1,8 @@
+C:\Users\Kajkacz>curl -i -XPOST -d '{"test":"without_key"}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23919/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s23919/keys/XX68Mq7GjCtZoYSy2weaGx1Fw0S
+Date: Fri, 02 Apr 2021 16:46:07 GMT
+Content-Type: application/json
+Content-Length: 0

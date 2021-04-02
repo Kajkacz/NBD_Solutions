@@ -1,0 +1,13 @@
+curl -i http://127.0.0.1:8098/buckets/s23919/keys/doc1
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvp+5sFSKgUFdMIMpkSWPlSFix+2bfFkA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23919>; rel="up"
+Last-Modified: Fri, 02 Apr 2021 15:46:32 GMT
+ETag: "H8ZihmNwGbRJ6EPlC5ZfH"
+Date: Fri, 02 Apr 2021 16:11:58 GMT
+Content-Type: application/json
+Content-Length: 24
+
+'{a:b,b:2,c:3.0,4:null}'
