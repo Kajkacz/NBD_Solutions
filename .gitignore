@@ -7,3 +7,5 @@ nbd-solutions/target
 project
 target/
 .~lock*
+Riak/Task_8/riak_demo/riak-client-2.1.1-jar-with-dependencies.jar
+Tasks/*

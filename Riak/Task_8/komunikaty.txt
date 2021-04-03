@@ -1,0 +1,8 @@
+
+[info] running Main
+Beginning of Riak Demo
+Value stored/fetched : Future(Success(Some(RiakValue(This is the content of document,text/plain,a85hYGBgzGDKBVI8+xkWvo/z+P2LgUFdPIMpkTGPlUFS5+5NviwA,"3nuiOLiFuG5UEbq4ebFJbO",2021-04-03T18:12:41.000Z,Set()))))
+Value fetched : Future(Success(Some(RiakValue(THIS IS DIFFERENT THEN BEFORE,text/plain,a85hYGBgzGDKBVI8+xkWvo/z+P2LgUFdPIMpkSmPlUFS5+5NviwA,"4Jtm5REoQhbDr88qAt1eTI",2021-04-03T18:12:41.000Z,Set()))))
+Result  deleted : Future(Success(()))
+Value failed to retrieve : Future(Success(None))
+End of Riak Demo
