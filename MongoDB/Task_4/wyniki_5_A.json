@@ -1,6 +1,6 @@
 MongoDB shell version v4.4.4
 connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("6e1f634d-0af4-4815-acdc-7cd0050f14a5") }
+Implicit session: session { "id" : UUID("3ac2612d-4c20-4424-8368-f68aa35bd65a") }
 MongoDB server version: 4.4.4
 {
 	"_batch" : [
@@ -10,19 +10,9 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 4734.5
 		},
 		{
-			"_id" : "EGP",
-			"sum_credit" : 11158.6,
-			"avg_credit" : 5579.3
-		},
-		{
-			"_id" : "AFN",
-			"sum_credit" : 33510.98,
-			"avg_credit" : 5585.163333333334
-		},
-		{
-			"_id" : "ZMW",
-			"sum_credit" : 11139.12,
-			"avg_credit" : 5569.56
+			"_id" : "XOF",
+			"sum_credit" : 35764.1,
+			"avg_credit" : 5960.683333333333
 		},
 		{
 			"_id" : "KRW",
@@ -30,84 +20,14 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 6689.91
 		},
 		{
-			"_id" : "EUR",
-			"sum_credit" : 490182.94,
-			"avg_credit" : 4901.8294
-		},
-		{
-			"_id" : "GBP",
-			"sum_credit" : 12298.38,
-			"avg_credit" : 6149.19
+			"_id" : "TJS",
+			"sum_credit" : 8175.42,
+			"avg_credit" : 4087.71
 		},
 		{
 			"_id" : "ZWL",
 			"sum_credit" : 11584.34,
 			"avg_credit" : 5792.17
-		},
-		{
-			"_id" : "KZT",
-			"sum_credit" : 7577.9,
-			"avg_credit" : 3788.95
-		},
-		{
-			"_id" : "JPY",
-			"sum_credit" : 121889.48,
-			"avg_credit" : 5078.7283333333335
-		},
-		{
-			"_id" : "NIO",
-			"sum_credit" : 19942.56,
-			"avg_credit" : 4985.64
-		},
-		{
-			"_id" : "MXN",
-			"sum_credit" : 100458,
-			"avg_credit" : 5022.9
-		},
-		{
-			"_id" : "MNT",
-			"sum_credit" : 43431.22,
-			"avg_credit" : 5428.9025
-		},
-		{
-			"_id" : "MWK",
-			"sum_credit" : 7148.84,
-			"avg_credit" : 3574.42
-		},
-		{
-			"_id" : "RWF",
-			"sum_credit" : 9265.76,
-			"avg_credit" : 4632.88
-		},
-		{
-			"_id" : "SEK",
-			"sum_credit" : 141680.38,
-			"avg_credit" : 5060.013571428572
-		},
-		{
-			"_id" : "XOF",
-			"sum_credit" : 35764.1,
-			"avg_credit" : 5960.683333333333
-		},
-		{
-			"_id" : "HRK",
-			"sum_credit" : 48709.64,
-			"avg_credit" : 4870.964
-		},
-		{
-			"_id" : "PHP",
-			"sum_credit" : 237212.56,
-			"avg_credit" : 4941.928333333333
-		},
-		{
-			"_id" : "PEN",
-			"sum_credit" : 37289.88,
-			"avg_credit" : 4661.235
-		},
-		{
-			"_id" : "NPR",
-			"sum_credit" : 11584.52,
-			"avg_credit" : 5792.26
 		},
 		{
 			"_id" : "ILS",
@@ -120,14 +40,9 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 5168.6849999999995
 		},
 		{
-			"_id" : "CAD",
-			"sum_credit" : 116751.2,
-			"avg_credit" : 5306.872727272727
-		},
-		{
-			"_id" : "LYD",
-			"sum_credit" : 17529.98,
-			"avg_credit" : 4382.495
+			"_id" : "MAD",
+			"sum_credit" : 7637.7,
+			"avg_credit" : 3818.85
 		},
 		{
 			"_id" : "HNL",
@@ -135,14 +50,29 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 5504.863333333334
 		},
 		{
-			"_id" : "CNY",
-			"sum_credit" : 941400.76,
-			"avg_credit" : 4954.740842105263
+			"_id" : "TZS",
+			"sum_credit" : 14104.740000000002,
+			"avg_credit" : 3526.1850000000004
 		},
 		{
-			"_id" : "RSD",
-			"sum_credit" : 8553.12,
-			"avg_credit" : 4276.56
+			"_id" : "MKD",
+			"sum_credit" : 7670.1,
+			"avg_credit" : 3835.05
+		},
+		{
+			"_id" : "MXN",
+			"sum_credit" : 100458,
+			"avg_credit" : 5022.9
+		},
+		{
+			"_id" : "CAD",
+			"sum_credit" : 116751.2,
+			"avg_credit" : 5306.872727272727
+		},
+		{
+			"_id" : "SEK",
+			"sum_credit" : 141680.38,
+			"avg_credit" : 5060.013571428572
 		},
 		{
 			"_id" : "GTQ",
@@ -150,39 +80,14 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 5806.3
 		},
 		{
-			"_id" : "CZK",
-			"sum_credit" : 74312.84,
-			"avg_credit" : 4644.5525
+			"_id" : "VEF",
+			"sum_credit" : 16666.56,
+			"avg_credit" : 4166.64
 		},
 		{
-			"_id" : "NZD",
-			"sum_credit" : 10656.92,
-			"avg_credit" : 5328.46
-		},
-		{
-			"_id" : "ALL",
-			"sum_credit" : 6650.96,
-			"avg_credit" : 3325.48
-		},
-		{
-			"_id" : "IQD",
-			"sum_credit" : 8538.78,
-			"avg_credit" : 4269.39
-		},
-		{
-			"_id" : "NOK",
-			"sum_credit" : 9547.32,
-			"avg_credit" : 4773.66
-		},
-		{
-			"_id" : "XAF",
-			"sum_credit" : 28189.32,
-			"avg_credit" : 4698.22
-		},
-		{
-			"_id" : "PYG",
-			"sum_credit" : 9749.38,
-			"avg_credit" : 4874.69
+			"_id" : "GBP",
+			"sum_credit" : 12298.38,
+			"avg_credit" : 6149.19
 		},
 		{
 			"_id" : "BYR",
@@ -190,14 +95,39 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 5095.79
 		},
 		{
-			"_id" : "XPF",
-			"sum_credit" : 9518.14,
-			"avg_credit" : 4759.07
+			"_id" : "PHP",
+			"sum_credit" : 237212.56,
+			"avg_credit" : 4941.928333333333
 		},
 		{
-			"_id" : "ARS",
-			"sum_credit" : 46484,
-			"avg_credit" : 4648.4
+			"_id" : "XAF",
+			"sum_credit" : 28189.32,
+			"avg_credit" : 4698.22
+		},
+		{
+			"_id" : "ALL",
+			"sum_credit" : 6650.96,
+			"avg_credit" : 3325.48
+		},
+		{
+			"_id" : "JPY",
+			"sum_credit" : 121889.48,
+			"avg_credit" : 5078.7283333333335
+		},
+		{
+			"_id" : "MNT",
+			"sum_credit" : 43431.22,
+			"avg_credit" : 5428.9025
+		},
+		{
+			"_id" : "THB",
+			"sum_credit" : 46043.92,
+			"avg_credit" : 4604.392
+		},
+		{
+			"_id" : "NPR",
+			"sum_credit" : 11584.52,
+			"avg_credit" : 5792.26
 		},
 		{
 			"_id" : "RUB",
@@ -205,19 +135,74 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 4989.547916666666
 		},
 		{
-			"_id" : "MGA",
-			"sum_credit" : 29121.98,
-			"avg_credit" : 4853.663333333333
+			"_id" : "KYD",
+			"sum_credit" : 7521.78,
+			"avg_credit" : 3760.89
+		},
+		{
+			"_id" : "ZAR",
+			"sum_credit" : 23581.84,
+			"avg_credit" : 3930.306666666667
+		},
+		{
+			"_id" : "MWK",
+			"sum_credit" : 7148.84,
+			"avg_credit" : 3574.42
+		},
+		{
+			"_id" : "CNY",
+			"sum_credit" : 941400.76,
+			"avg_credit" : 4954.740842105263
+		},
+		{
+			"_id" : "RWF",
+			"sum_credit" : 9265.76,
+			"avg_credit" : 4632.88
+		},
+		{
+			"_id" : "VND",
+			"sum_credit" : 72320.52,
+			"avg_credit" : 4520.0325
+		},
+		{
+			"_id" : "LYD",
+			"sum_credit" : 17529.98,
+			"avg_credit" : 4382.495
+		},
+		{
+			"_id" : "HRK",
+			"sum_credit" : 48709.64,
+			"avg_credit" : 4870.964
+		},
+		{
+			"_id" : "PYG",
+			"sum_credit" : 9749.38,
+			"avg_credit" : 4874.69
+		},
+		{
+			"_id" : "NZD",
+			"sum_credit" : 10656.92,
+			"avg_credit" : 5328.46
+		},
+		{
+			"_id" : "IQD",
+			"sum_credit" : 8538.78,
+			"avg_credit" : 4269.39
+		},
+		{
+			"_id" : "IRR",
+			"sum_credit" : 53008.479999999996,
+			"avg_credit" : 4417.373333333333
+		},
+		{
+			"_id" : "IDR",
+			"sum_credit" : 647845.18,
+			"avg_credit" : 4907.918030303031
 		},
 		{
 			"_id" : "ISK",
 			"sum_credit" : 8632.82,
 			"avg_credit" : 4316.41
-		},
-		{
-			"_id" : "CLP",
-			"sum_credit" : 42017.9,
-			"avg_credit" : 5252.2375
 		},
 		{
 			"_id" : "BOB",
@@ -230,39 +215,9 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 4936.6825
 		},
 		{
-			"_id" : "BRL",
-			"sum_credit" : 99264.04000000001,
-			"avg_credit" : 4512.001818181819
-		},
-		{
-			"_id" : "USD",
-			"sum_credit" : 149361.96,
-			"avg_credit" : 4978.732
-		},
-		{
-			"_id" : "ZAR",
-			"sum_credit" : 23581.84,
-			"avg_credit" : 3930.306666666667
-		},
-		{
-			"_id" : "YER",
-			"sum_credit" : 27425,
-			"avg_credit" : 4570.833333333333
-		},
-		{
-			"_id" : "NGN",
-			"sum_credit" : 49892.46,
-			"avg_credit" : 4157.705
-		},
-		{
-			"_id" : "CUP",
-			"sum_credit" : 30034.68,
-			"avg_credit" : 5005.78
-		},
-		{
-			"_id" : "KYD",
-			"sum_credit" : 7521.78,
-			"avg_credit" : 3760.89
+			"_id" : "PLN",
+			"sum_credit" : 181541.56,
+			"avg_credit" : 5042.821111111111
 		},
 		{
 			"_id" : "UZS",
@@ -270,14 +225,24 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 3573.03
 		},
 		{
-			"_id" : "MAD",
-			"sum_credit" : 7637.7,
-			"avg_credit" : 3818.85
+			"_id" : "USD",
+			"sum_credit" : 149361.96,
+			"avg_credit" : 4978.732
 		},
 		{
-			"_id" : "PLN",
-			"sum_credit" : 181541.56,
-			"avg_credit" : 5042.821111111111
+			"_id" : "NGN",
+			"sum_credit" : 49892.46,
+			"avg_credit" : 4157.705
+		},
+		{
+			"_id" : "PEN",
+			"sum_credit" : 37289.88,
+			"avg_credit" : 4661.235
+		},
+		{
+			"_id" : "CZK",
+			"sum_credit" : 74312.84,
+			"avg_credit" : 4644.5525
 		},
 		{
 			"_id" : "VUV",
@@ -285,14 +250,19 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 6418.27
 		},
 		{
-			"_id" : "TZS",
-			"sum_credit" : 14104.740000000002,
-			"avg_credit" : 3526.1850000000004
+			"_id" : "EGP",
+			"sum_credit" : 11158.6,
+			"avg_credit" : 5579.3
 		},
 		{
-			"_id" : "IRR",
-			"sum_credit" : 53008.479999999996,
-			"avg_credit" : 4417.373333333333
+			"_id" : "BGN",
+			"sum_credit" : 42401.76,
+			"avg_credit" : 5300.22
+		},
+		{
+			"_id" : "EUR",
+			"sum_credit" : 490182.94,
+			"avg_credit" : 4901.8294
 		},
 		{
 			"_id" : "BWP",
@@ -305,49 +275,14 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 5436.11
 		},
 		{
-			"_id" : "TJS",
-			"sum_credit" : 8175.42,
-			"avg_credit" : 4087.71
+			"_id" : "BRL",
+			"sum_credit" : 99264.04000000001,
+			"avg_credit" : 4512.001818181819
 		},
 		{
-			"_id" : "BGN",
-			"sum_credit" : 42401.76,
-			"avg_credit" : 5300.22
-		},
-		{
-			"_id" : "MKD",
-			"sum_credit" : 7670.1,
-			"avg_credit" : 3835.05
-		},
-		{
-			"_id" : "UAH",
-			"sum_credit" : 80943.68000000001,
-			"avg_credit" : 5058.9800000000005
-		},
-		{
-			"_id" : "SRD",
-			"sum_credit" : 10573.36,
-			"avg_credit" : 5286.68
-		},
-		{
-			"_id" : "IDR",
-			"sum_credit" : 647845.18,
-			"avg_credit" : 4907.918030303031
-		},
-		{
-			"_id" : "CDF",
-			"sum_credit" : 24457.6,
-			"avg_credit" : 6114.4
-		},
-		{
-			"_id" : "AMD",
-			"sum_credit" : 49218.66,
-			"avg_credit" : 4921.866
-		},
-		{
-			"_id" : "MMK",
-			"sum_credit" : 9258.84,
-			"avg_credit" : 4629.42
+			"_id" : "NOK",
+			"sum_credit" : 9547.32,
+			"avg_credit" : 4773.66
 		},
 		{
 			"_id" : "MYR",
@@ -355,19 +290,84 @@ MongoDB server version: 4.4.4
 			"avg_credit" : 4781.12
 		},
 		{
-			"_id" : "VND",
-			"sum_credit" : 72320.52,
-			"avg_credit" : 4520.0325
+			"_id" : "SRD",
+			"sum_credit" : 10573.36,
+			"avg_credit" : 5286.68
 		},
 		{
-			"_id" : "THB",
-			"sum_credit" : 46043.92,
-			"avg_credit" : 4604.392
+			"_id" : "CDF",
+			"sum_credit" : 24457.6,
+			"avg_credit" : 6114.4
 		},
 		{
-			"_id" : "VEF",
-			"sum_credit" : 16666.56,
-			"avg_credit" : 4166.64
+			"_id" : "NIO",
+			"sum_credit" : 19942.56,
+			"avg_credit" : 4985.64
+		},
+		{
+			"_id" : "MGA",
+			"sum_credit" : 29121.98,
+			"avg_credit" : 4853.663333333333
+		},
+		{
+			"_id" : "UAH",
+			"sum_credit" : 80943.68000000001,
+			"avg_credit" : 5058.9800000000005
+		},
+		{
+			"_id" : "ARS",
+			"sum_credit" : 46484,
+			"avg_credit" : 4648.4
+		},
+		{
+			"_id" : "KZT",
+			"sum_credit" : 7577.9,
+			"avg_credit" : 3788.95
+		},
+		{
+			"_id" : "XPF",
+			"sum_credit" : 9518.14,
+			"avg_credit" : 4759.07
+		},
+		{
+			"_id" : "RSD",
+			"sum_credit" : 8553.12,
+			"avg_credit" : 4276.56
+		},
+		{
+			"_id" : "CLP",
+			"sum_credit" : 42017.9,
+			"avg_credit" : 5252.2375
+		},
+		{
+			"_id" : "YER",
+			"sum_credit" : 27425,
+			"avg_credit" : 4570.833333333333
+		},
+		{
+			"_id" : "MMK",
+			"sum_credit" : 9258.84,
+			"avg_credit" : 4629.42
+		},
+		{
+			"_id" : "AFN",
+			"sum_credit" : 33510.98,
+			"avg_credit" : 5585.163333333334
+		},
+		{
+			"_id" : "CUP",
+			"sum_credit" : 30034.68,
+			"avg_credit" : 5005.78
+		},
+		{
+			"_id" : "ZMW",
+			"sum_credit" : 11139.12,
+			"avg_credit" : 5569.56
+		},
+		{
+			"_id" : "AMD",
+			"sum_credit" : 49218.66,
+			"avg_credit" : 4921.866
 		}
 	],
 	"_useReadCommands" : true,

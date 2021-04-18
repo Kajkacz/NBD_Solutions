@@ -1,6 +1,6 @@
 MongoDB shell version v4.4.4
 connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("91d085aa-4fee-4fcd-88e1-be93275913dc") }
+Implicit session: session { "id" : UUID("2265d0e2-209e-4064-b19f-c48f53fef25a") }
 MongoDB server version: 4.4.4
 {
 	"_batch" : [

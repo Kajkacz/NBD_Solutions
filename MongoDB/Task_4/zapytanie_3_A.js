@@ -1,1 +1,1 @@
-printjson(db.people.distinct("job"));
+printjson(db.people.distinct("job")); //TODO zrobić na agregacji 
