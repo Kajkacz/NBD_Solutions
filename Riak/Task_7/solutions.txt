@@ -7,13 +7,10 @@ curl -i -XPUT -d '{"a":"f","b":213,"c":3.14,"4":null}' -H "Content-Type: applica
 2)
 curl -i http://127.0.0.1:8098/buckets/s23919/keys/doc1
 3)
-//CZY O TO TUTAJ CHODZI, CZY MOŻNA TO ZROBIĆ BEZ PODAWANIA CAŁEGO DOKUMENTU
 curl -i -XPUT -d '{"a":"b","b":2,"c":3.0,"4":null,"extra_field":42}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23919/keys/doc1?returnbody=true
 4)
-//CZY O TO TUTAJ CHODZI, CZY MOŻNA TO ZROBIĆ BEZ PODAWANIA CAŁEGO DOKUMENTU
 curl -i -XPUT -d '{"b":2,"c":3.0,"4":null,"extra_field":42}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23919/keys/doc1?returnbody=true
 5)
-//CZY O TO TUTAJ CHODZI, CZY MOŻNA TO ZROBIĆ BEZ PODAWANIA CAŁEGO DOKUMENTU
 curl -i -XPUT -d '{"b":2,"c":3.0,"4":null,"extra_field":420}' -H "Content-Type: application/json" http://127.0.0.1:8098/buckets/s23919/keys/doc1?returnbody=true
 6)
 curl -i -XDELETE http://localhost:8098/buckets/s23919/keys/doc1

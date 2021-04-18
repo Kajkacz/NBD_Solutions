@@ -23,16 +23,7 @@ object Main extends App {
   Await.ready(val_fetched, Duration.Inf)
   println("Value stored/fetched : " + val_fetched)
 
-  //MODIFY // How to unwrap this from future?
-  // val_fetched.onComplete {
-  //   case Success(value) => {
-  //     val modified = value
-  //     val modify_result: Future[Unit] = bucket.store("scala_doc", modified)
-
-  //     println("Value modified : " + modified)
-  //   }
-  //   case Failure(e) => e.printStackTrace
-  // }
+  //MODIFY
   val modified_val_to_be_stored: RiakValue =
     RiakValue("THIS IS DIFFERENT THEN BEFORE")
 

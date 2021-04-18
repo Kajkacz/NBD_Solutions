@@ -1,19 +1,19 @@
 Część 1
 1) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"}))RETURN p
 2) MATCH p=shortestPath((darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"})) WHERE ALL (x IN RELATIONSHIPS(p) WHERE x.winter = "true") RETURN p
-3a) //CZEMY TO DZIAŁA TYLKO Z KIERUNKIEM
+3a) 
 MATCH path=(darj {name:"Darjeeling"})-[*]->(sand {name:"Sandakphu"}) 
 WHERE ALL(route in relationships(path) WHERE route.winter = "true") 
 WITH path,reduce(totalDistance = 0, r IN relationships(path) | totalDistance + r.distance) AS totalDistance,
 RETURN path,totalDistance
-3b) // TO TROCHĘ NIE MA SENSU BO NIE MA TAKICH MIEJSC
+3b)
 MATCH (darj {name:"Darjeeling"})-[:twowheeler*]->(target) 
 WHERE ALL(route in relationships(path) WHERE route.summer = "true") 
 RETURN target
 Część 2
 4) MATCH (ap:Airport) -[c]- (:Flight) return ap,count(c) ORDER BY count(c) DESC
 
-SETUP FOR THE NEXT ONES // THIS SEEMS WRONG, ADDING RELATIONSHIPS FOR STUFF WE SHOULD JOIN
+SETUP FOR THE NEXT ONES 
 
 MATCH (fl:Flight) <-[:ASSIGN*]-(tk:Ticket)
 with fl,MIN(tk.price) as cheapest
