@@ -1,3 +1,4 @@
+import scala.annotation.tailrec
 object Main extends App {
 // Ćwiczenia 1
   println(
@@ -28,7 +29,7 @@ object Main extends App {
   ): String = {
     var ret: String = "";
     var element = "";
-    for (element <- str_list if element.charAt(0) == start_char) {
+    for (element <- str_list if element.head == start_char) {
       ret += element + ",";
     }
     ret.substring(0, ret.length() - 1)
@@ -70,11 +71,18 @@ object Main extends App {
     "Recurent reverse concatanation : " + concat_list_recurent_reverse(weekdays)
   )
 // Zadanie 3
-  def concat_list_recurent_tail(str_list: List[String]): String = {
-    if (str_list.length == 1)
-      str_list(0)
+  @tailrec
+  def concat_list_recurent_tail(
+      str_list: List[String],
+      result: String = ""
+  ): String = {
+    if (str_list.length == 0)
+      result
     else
-      str_list(0) + ',' + concat_list_recurent_tail(str_list.tail)
+      concat_list_recurent_tail(
+        str_list.tail,
+        if (result != "") result + ',' + str_list.head else str_list.head
+      )
   }
 
   println(
@@ -89,14 +97,17 @@ object Main extends App {
 
   println("Foldr concatanation : " + weekdays.foldRight("") {
     (concat_string, element) =>
-      if (concat_string != "") element + ',' + concat_string else element
-  }) // TODO Remove tailing ,
+      if (element != "") element + ',' + concat_string else concat_string
+  })
 
-  println("Foldl concatanation with filter : " + weekdays.foldLeft("") {
-    (concat_string, element) =>
-      if (element.charAt(0) == 'S') concat_string + ',' + element
-      else concat_string
-  }) // TODO Remove tailing ,
+  println(
+    "Foldl concatanation with filter : " + weekdays
+      .filter(_.head == 'S')
+      .foldLeft("") { (concat_string, element) =>
+        if (concat_string != "") concat_string + ',' + element else element
+
+      }
+  )
 
 // Zadanie 5
   val products: Map[String, Double] =
@@ -179,11 +190,12 @@ object Main extends App {
   class BankAccount(private var balance: Int = 0) {
     def deposit(change: Int): Unit = {
       balance += change
-      println("Current balance : " + balance)
     }
     def withdraw(change: Int): Unit = {
       balance -= change
-      println("Current balance : " + balance)
+    }
+    def check(): Int = {
+      balance
     }
   }
   val myAccount = new BankAccount
@@ -192,6 +204,11 @@ object Main extends App {
   val wifesAccount = new BankAccount(1000)
   wifesAccount.deposit(1000)
   wifesAccount.withdraw(500)
+  println(
+    "My wife has " + wifesAccount.check() + "PLN and I have " + myAccount
+      .check() + "PLN"
+  )
+
 // Zadanie 3
   case class Person(var name: String, var surname: String)
   val me = new Person("Kajetan", "Kaczmarek")
