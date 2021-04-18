@@ -1,1 +1,12 @@
-printjson(db.people.distinct("job")); //TODO zrobić na agregacji 
+printjson(
+    db.people.aggregate([
+        {
+            $group: {
+                _id: "$job",
+                count: {
+                    $sum: 1
+                }
+            }
+        }
+    ])
+);

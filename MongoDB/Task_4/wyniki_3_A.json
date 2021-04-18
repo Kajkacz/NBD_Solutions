@@ -1,201 +1,647 @@
 MongoDB shell version v4.4.4
 connecting to: mongodb://127.0.0.1:27017/nbd?compressors=disabled&gssapiServiceName=mongodb
-Implicit session: session { "id" : UUID("8fd640a1-2433-4de9-ab28-764070114933") }
+Implicit session: session { "id" : UUID("2876b41e-54af-47a8-ae7b-e308e8941e17") }
 MongoDB server version: 4.4.4
-[
-	"Account Coordinator",
-	"Account Executive",
-	"Account Representative I",
-	"Account Representative II",
-	"Account Representative III",
-	"Account Representative IV",
-	"Accountant I",
-	"Accountant II",
-	"Accountant III",
-	"Accountant IV",
-	"Accounting Assistant I",
-	"Accounting Assistant II",
-	"Accounting Assistant III",
-	"Accounting Assistant IV",
-	"Actuary",
-	"Administrative Assistant I",
-	"Administrative Assistant II",
-	"Administrative Assistant III",
-	"Administrative Assistant IV",
-	"Administrative Officer",
-	"Analog Circuit Design manager",
-	"Analyst Programmer",
-	"Assistant Manager",
-	"Assistant Media Planner",
-	"Assistant Professor",
-	"Associate Professor",
-	"Automation Specialist I",
-	"Automation Specialist II",
-	"Automation Specialist III",
-	"Automation Specialist IV",
-	"Biostatistician I",
-	"Biostatistician II",
-	"Biostatistician III",
-	"Biostatistician IV",
-	"Budget/Accounting Analyst I",
-	"Budget/Accounting Analyst II",
-	"Budget/Accounting Analyst III",
-	"Budget/Accounting Analyst IV",
-	"Business Systems Development Analyst",
-	"Chemical Engineer",
-	"Chief Design Engineer",
-	"Civil Engineer",
-	"Clinical Specialist",
-	"Community Outreach Specialist",
-	"Compensation Analyst",
-	"Computer Systems Analyst I",
-	"Computer Systems Analyst II",
-	"Computer Systems Analyst III",
-	"Computer Systems Analyst IV",
-	"Cost Accountant",
-	"Data Coordiator",
-	"Database Administrator I",
-	"Database Administrator II",
-	"Database Administrator III",
-	"Database Administrator IV",
-	"Dental Hygienist",
-	"Design Engineer",
-	"Desktop Support Technician",
-	"Developer I",
-	"Developer II",
-	"Developer III",
-	"Developer IV",
-	"Director of Sales",
-	"Editor",
-	"Electrical Engineer",
-	"Engineer I",
-	"Engineer II",
-	"Engineer III",
-	"Engineer IV",
-	"Environmental Specialist",
-	"Environmental Tech",
-	"Executive Secretary",
-	"Financial Advisor",
-	"Financial Analyst",
-	"Food Chemist",
-	"GIS Technical Architect",
-	"General Manager",
-	"Geological Engineer",
-	"Geologist I",
-	"Geologist II",
-	"Geologist III",
-	"Geologist IV",
-	"Graphic Designer",
-	"Health Coach I",
-	"Health Coach II",
-	"Health Coach III",
-	"Health Coach IV",
-	"Help Desk Operator",
-	"Help Desk Technician",
-	"Human Resources Assistant I",
-	"Human Resources Assistant II",
-	"Human Resources Assistant III",
-	"Human Resources Assistant IV",
-	"Human Resources Manager",
-	"Information Systems Manager",
-	"Internal Auditor",
-	"Junior Executive",
-	"Legal Assistant",
-	"Librarian",
-	"Marketing Assistant",
-	"Marketing Manager",
-	"Mechanical Systems Engineer",
-	"Media Manager I",
-	"Media Manager II",
-	"Media Manager III",
-	"Media Manager IV",
-	"Nuclear Power Engineer",
-	"Nurse",
-	"Nurse Practicioner",
-	"Occupational Therapist",
-	"Office Assistant I",
-	"Office Assistant II",
-	"Office Assistant III",
-	"Office Assistant IV",
-	"Operator",
-	"Paralegal",
-	"Payment Adjustment Coordinator",
-	"Pharmacist",
-	"Physical Therapy Assistant",
-	"Product Engineer",
-	"Professor",
-	"Programmer Analyst I",
-	"Programmer Analyst II",
-	"Programmer Analyst III",
-	"Programmer Analyst IV",
-	"Programmer I",
-	"Programmer II",
-	"Programmer III",
-	"Programmer IV",
-	"Project Manager",
-	"Quality Control Specialist",
-	"Quality Engineer",
-	"Recruiter",
-	"Recruiting Manager",
-	"Registered Nurse",
-	"Research Assistant I",
-	"Research Assistant II",
-	"Research Assistant III",
-	"Research Assistant IV",
-	"Research Associate",
-	"Research Nurse",
-	"Safety Technician I",
-	"Safety Technician II",
-	"Safety Technician III",
-	"Safety Technician IV",
-	"Sales Associate",
-	"Sales Representative",
-	"Senior Cost Accountant",
-	"Senior Developer",
-	"Senior Editor",
-	"Senior Financial Analyst",
-	"Senior Quality Engineer",
-	"Senior Sales Associate",
-	"Social Worker",
-	"Software Consultant",
-	"Software Engineer I",
-	"Software Engineer II",
-	"Software Engineer III",
-	"Software Engineer IV",
-	"Software Test Engineer I",
-	"Software Test Engineer II",
-	"Software Test Engineer III",
-	"Software Test Engineer IV",
-	"Speech Pathologist",
-	"Staff Accountant I",
-	"Staff Accountant II",
-	"Staff Accountant III",
-	"Staff Accountant IV",
-	"Staff Scientist",
-	"Statistician I",
-	"Statistician II",
-	"Statistician III",
-	"Statistician IV",
-	"Structural Analysis Engineer",
-	"Structural Engineer",
-	"Systems Administrator I",
-	"Systems Administrator II",
-	"Systems Administrator III",
-	"Systems Administrator IV",
-	"Tax Accountant",
-	"Teacher",
-	"Technical Writer",
-	"VP Accounting",
-	"VP Marketing",
-	"VP Product Management",
-	"VP Quality Control",
-	"VP Sales",
-	"Web Designer I",
-	"Web Designer II",
-	"Web Designer III",
-	"Web Designer IV",
-	"Web Developer I",
-	"Web Developer II",
-	"Web Developer III",
-	"Web Developer IV"
-]
+{
+	"_batch" : [
+		{
+			"_id" : "Programmer Analyst III",
+			"count" : 40
+		},
+		{
+			"_id" : "Clinical Specialist",
+			"count" : 148
+		},
+		{
+			"_id" : "Accounting Assistant IV",
+			"count" : 50
+		},
+		{
+			"_id" : "Automation Specialist II",
+			"count" : 34
+		},
+		{
+			"_id" : "Software Engineer III",
+			"count" : 54
+		},
+		{
+			"_id" : "Food Chemist",
+			"count" : 162
+		},
+		{
+			"_id" : "Design Engineer",
+			"count" : 160
+		},
+		{
+			"_id" : "Web Designer II",
+			"count" : 34
+		},
+		{
+			"_id" : "Sales Representative",
+			"count" : 188
+		},
+		{
+			"_id" : "Dental Hygienist",
+			"count" : 200
+		},
+		{
+			"_id" : "Research Associate",
+			"count" : 180
+		},
+		{
+			"_id" : "Web Developer II",
+			"count" : 38
+		},
+		{
+			"_id" : "Statistician I",
+			"count" : 44
+		},
+		{
+			"_id" : "Business Systems Development Analyst",
+			"count" : 182
+		},
+		{
+			"_id" : "Cost Accountant",
+			"count" : 156
+		},
+		{
+			"_id" : "Geologist III",
+			"count" : 36
+		},
+		{
+			"_id" : "Software Test Engineer IV",
+			"count" : 38
+		},
+		{
+			"_id" : "Help Desk Technician",
+			"count" : 184
+		},
+		{
+			"_id" : "Assistant Manager",
+			"count" : 152
+		},
+		{
+			"_id" : "Programmer I",
+			"count" : 42
+		},
+		{
+			"_id" : "Web Designer III",
+			"count" : 34
+		},
+		{
+			"_id" : "Director of Sales",
+			"count" : 162
+		},
+		{
+			"_id" : "Web Developer III",
+			"count" : 36
+		},
+		{
+			"_id" : "Tax Accountant",
+			"count" : 152
+		},
+		{
+			"_id" : "Registered Nurse",
+			"count" : 148
+		},
+		{
+			"_id" : "Recruiter",
+			"count" : 172
+		},
+		{
+			"_id" : "Engineer IV",
+			"count" : 62
+		},
+		{
+			"_id" : "Junior Executive",
+			"count" : 176
+		},
+		{
+			"_id" : "Occupational Therapist",
+			"count" : 174
+		},
+		{
+			"_id" : "Financial Analyst",
+			"count" : 180
+		},
+		{
+			"_id" : "Human Resources Assistant I",
+			"count" : 50
+		},
+		{
+			"_id" : "Project Manager",
+			"count" : 182
+		},
+		{
+			"_id" : "Web Designer I",
+			"count" : 56
+		},
+		{
+			"_id" : "Financial Advisor",
+			"count" : 150
+		},
+		{
+			"_id" : "Executive Secretary",
+			"count" : 174
+		},
+		{
+			"_id" : "Programmer Analyst IV",
+			"count" : 42
+		},
+		{
+			"_id" : "Systems Administrator I",
+			"count" : 44
+		},
+		{
+			"_id" : "Statistician IV",
+			"count" : 46
+		},
+		{
+			"_id" : "Media Manager II",
+			"count" : 38
+		},
+		{
+			"_id" : "Software Engineer IV",
+			"count" : 44
+		},
+		{
+			"_id" : "Account Representative IV",
+			"count" : 56
+		},
+		{
+			"_id" : "Human Resources Manager",
+			"count" : 168
+		},
+		{
+			"_id" : "Accountant III",
+			"count" : 36
+		},
+		{
+			"_id" : "Accountant IV",
+			"count" : 50
+		},
+		{
+			"_id" : "Database Administrator III",
+			"count" : 30
+		},
+		{
+			"_id" : "Developer III",
+			"count" : 36
+		},
+		{
+			"_id" : "Environmental Specialist",
+			"count" : 146
+		},
+		{
+			"_id" : "Social Worker",
+			"count" : 176
+		},
+		{
+			"_id" : "Media Manager IV",
+			"count" : 42
+		},
+		{
+			"_id" : "Safety Technician II",
+			"count" : 50
+		},
+		{
+			"_id" : "Speech Pathologist",
+			"count" : 194
+		},
+		{
+			"_id" : "Nuclear Power Engineer",
+			"count" : 174
+		},
+		{
+			"_id" : "Biostatistician I",
+			"count" : 42
+		},
+		{
+			"_id" : "Quality Engineer",
+			"count" : 168
+		},
+		{
+			"_id" : "Compensation Analyst",
+			"count" : 174
+		},
+		{
+			"_id" : "Senior Financial Analyst",
+			"count" : 154
+		},
+		{
+			"_id" : "Safety Technician III",
+			"count" : 46
+		},
+		{
+			"_id" : "Administrative Assistant I",
+			"count" : 28
+		},
+		{
+			"_id" : "Senior Cost Accountant",
+			"count" : 168
+		},
+		{
+			"_id" : "Health Coach I",
+			"count" : 54
+		},
+		{
+			"_id" : "Associate Professor",
+			"count" : 130
+		},
+		{
+			"_id" : "Biostatistician IV",
+			"count" : 50
+		},
+		{
+			"_id" : "Mechanical Systems Engineer",
+			"count" : 160
+		},
+		{
+			"_id" : "Computer Systems Analyst IV",
+			"count" : 44
+		},
+		{
+			"_id" : "Developer I",
+			"count" : 50
+		},
+		{
+			"_id" : "Environmental Tech",
+			"count" : 178
+		},
+		{
+			"_id" : "Software Test Engineer III",
+			"count" : 36
+		},
+		{
+			"_id" : "Senior Developer",
+			"count" : 174
+		},
+		{
+			"_id" : "Health Coach II",
+			"count" : 40
+		},
+		{
+			"_id" : "Electrical Engineer",
+			"count" : 174
+		},
+		{
+			"_id" : "VP Product Management",
+			"count" : 182
+		},
+		{
+			"_id" : "VP Marketing",
+			"count" : 158
+		},
+		{
+			"_id" : "Community Outreach Specialist",
+			"count" : 180
+		},
+		{
+			"_id" : "Biostatistician III",
+			"count" : 52
+		},
+		{
+			"_id" : "Geologist I",
+			"count" : 52
+		},
+		{
+			"_id" : "Office Assistant III",
+			"count" : 18
+		},
+		{
+			"_id" : "Editor",
+			"count" : 172
+		},
+		{
+			"_id" : "Librarian",
+			"count" : 152
+		},
+		{
+			"_id" : "Staff Accountant I",
+			"count" : 48
+		},
+		{
+			"_id" : "Computer Systems Analyst III",
+			"count" : 28
+		},
+		{
+			"_id" : "Developer IV",
+			"count" : 44
+		},
+		{
+			"_id" : "Engineer II",
+			"count" : 38
+		},
+		{
+			"_id" : "Chemical Engineer",
+			"count" : 182
+		},
+		{
+			"_id" : "Graphic Designer",
+			"count" : 160
+		},
+		{
+			"_id" : "Desktop Support Technician",
+			"count" : 206
+		},
+		{
+			"_id" : "Accounting Assistant I",
+			"count" : 50
+		},
+		{
+			"_id" : "Computer Systems Analyst II",
+			"count" : 64
+		},
+		{
+			"_id" : "Research Assistant I",
+			"count" : 44
+		},
+		{
+			"_id" : "Staff Accountant II",
+			"count" : 64
+		},
+		{
+			"_id" : "Product Engineer",
+			"count" : 188
+		},
+		{
+			"_id" : "Geologist IV",
+			"count" : 46
+		},
+		{
+			"_id" : "Programmer Analyst II",
+			"count" : 36
+		},
+		{
+			"_id" : "Health Coach III",
+			"count" : 40
+		},
+		{
+			"_id" : "Staff Accountant IV",
+			"count" : 44
+		},
+		{
+			"_id" : "Engineer I",
+			"count" : 38
+		},
+		{
+			"_id" : "Account Representative III",
+			"count" : 48
+		},
+		{
+			"_id" : "Statistician II",
+			"count" : 40
+		},
+		{
+			"_id" : "Administrative Assistant II",
+			"count" : 48
+		},
+		{
+			"_id" : "Media Manager I",
+			"count" : 40
+		},
+		{
+			"_id" : "Software Consultant",
+			"count" : 192
+		},
+		{
+			"_id" : "Help Desk Operator",
+			"count" : 188
+		}
+	],
+	"_useReadCommands" : true,
+	"_cursorid" : NumberLong("5846699352516946531"),
+	"_batchSize" : undefined,
+	"_maxAwaitTimeMS" : undefined,
+	"_txnNumber" : undefined,
+	"_ns" : "nbd.people",
+	"_db" : nbd,
+	"_collName" : "people",
+	"_cursorHandle" : {
+		
+	},
+	"isClosed" : function() {
+    if (this._useReadCommands) {
+        return bsonWoCompare({_: this._cursorid}, {_: NumberLong(0)}) === 0;
+    }
+    return this._cursor.isClosed();
+},
+	"isExhausted" : function() {
+    return this.isClosed() && this.objsLeftInBatch() === 0;
+},
+	"close" : function() {
+    if (!this._useReadCommands) {
+        this._cursor.close();
+    } else if (bsonWoCompare({_: this._cursorid}, {_: NumberLong(0)}) !== 0) {
+        var killCursorCmd = {
+            killCursors: this._collName,
+            cursors: [this._cursorid],
+        };
+        var cmdRes = this._db.runCommand(killCursorCmd);
+        if (cmdRes.ok != 1) {
+            throw _getErrorWithCode(cmdRes, "killCursors command failed: " + tojson(cmdRes));
+        }
+
+        this._cursorHandle.zeroCursorId();
+        this._cursorid = NumberLong(0);
+    }
+},
+	"_updatePostBatchResumeToken" : function(cursorObj) {
+    if (cursorObj.postBatchResumeToken) {
+        this._postBatchResumeToken = cursorObj.postBatchResumeToken;
+        if ((cursorObj.firstBatch || cursorObj.nextBatch).length === 0) {
+            this._resumeToken = this._postBatchResumeToken;
+        }
+        this._isChangeStream = true;
+    }
+},
+	"_runGetMoreCommand" : function() {
+    // Construct the getMore command.
+    var getMoreCmd = {getMore: this._cursorid, collection: this._collName};
+
+    if (this._batchSize) {
+        getMoreCmd["batchSize"] = this._batchSize;
+    }
+
+    // maxAwaitTimeMS is only supported when using read commands.
+    if (this._maxAwaitTimeMS) {
+        getMoreCmd.maxTimeMS = this._maxAwaitTimeMS;
+    }
+
+    if (this._txnNumber) {
+        getMoreCmd.txnNumber = NumberLong(this._txnNumber);
+        getMoreCmd.autocommit = false;
+    }
+
+    // Deliver the getMore command, and check for errors in the response.
+    var cmdRes = this._db.runCommand(getMoreCmd);
+    assert.commandWorked(cmdRes, () => "getMore command failed: " + tojson(cmdRes));
+
+    if (this._ns !== cmdRes.cursor.ns) {
+        throw Error("unexpected collection in getMore response: " + this._ns +
+                    " != " + cmdRes.cursor.ns);
+    }
+
+    if (!cmdRes.cursor.id.compare(NumberLong("0"))) {
+        this._cursorHandle.zeroCursorId();
+        this._cursorid = NumberLong("0");
+    } else if (this._cursorid.compare(cmdRes.cursor.id)) {
+        throw Error("unexpected cursor id: " + this._cursorid.toString() +
+                    " != " + cmdRes.cursor.id.toString());
+    }
+
+    // If the command result represents a change stream cursor, update our postBatchResumeToken.
+    this._updatePostBatchResumeToken(cmdRes.cursor);
+
+    // Successfully retrieved the next batch.
+    this._batch = cmdRes.cursor.nextBatch.reverse();
+},
+	"_hasNextUsingCommands" : function() {
+    assert(this._useReadCommands);
+
+    if (!this._batch.length) {
+        if (!this._cursorid.compare(NumberLong("0"))) {
+            return false;
+        }
+
+        this._runGetMoreCommand();
+    }
+
+    return this._batch.length > 0;
+},
+	"hasNext" : function() {
+    if (this._useReadCommands) {
+        return this._hasNextUsingCommands();
+    }
+
+    return this._batch.length || this._cursor.hasNext();
+},
+	"next" : function() {
+    if (this._batch.length) {
+        // Pop the next result off the batch.
+        const nextDoc = this._batch.pop();
+        if (this._isChangeStream) {
+            // If this is the last result in the batch, the postBatchResumeToken becomes the current
+            // resume token for the cursor. Otherwise, the resume token is the _id of 'nextDoc'.
+            this._resumeToken = (this._batch.length ? nextDoc._id : this._postBatchResumeToken);
+        }
+        return nextDoc;
+    } else if (this._useReadCommands) {
+        // Have to call hasNext() here, as this is where we may issue a getMore in order to retrieve
+        // the next batch of results.
+        if (!this.hasNext())
+            throw Error("error hasNext: false");
+        return this._batch.pop();
+    } else {
+        if (!this._cursor.hasNext())
+            throw Error("error hasNext: false");
+
+        var ret = this._cursor.next();
+        if (ret.$err)
+            throw _getErrorWithCode(ret, "error: " + tojson(ret));
+        return ret;
+    }
+},
+	"objsLeftInBatch" : function() {
+    if (this._useReadCommands) {
+        return this._batch.length;
+    } else if (this._batch.length) {
+        return this._batch.length;
+    } else {
+        return this._cursor.objsLeftInBatch();
+    }
+},
+	"getId" : function() {
+    return this._cursorid;
+},
+	"getResumeToken" : function() {
+    // Return the most recent recorded resume token, if such a token exists.
+    return this._resumeToken;
+},
+	"help" : function() {
+    // This is the same as the "Cursor Methods" section of DBQuery.help().
+    print("\nCursor methods");
+    print("\t.toArray() - iterates through docs and returns an array of the results");
+    print("\t.forEach( func )");
+    print("\t.map( func )");
+    print("\t.hasNext()");
+    print("\t.next()");
+    print(
+        "\t.objsLeftInBatch() - returns count of docs left in current batch (when exhausted, a new getMore will be issued)");
+    print("\t.itcount() - iterates through documents and counts them");
+    print(
+        "\t.getResumeToken() - for a change stream cursor, obtains the most recent valid resume token, if it exists.");
+    print("\t.pretty() - pretty print each document, possibly over multiple lines");
+    print("\t.close()");
+},
+	"toArray" : function() {
+    if (this._arr)
+        return this._arr;
+
+    var a = [];
+    while (this.hasNext())
+        a.push(this.next());
+    this._arr = a;
+    return a;
+},
+	"forEach" : function(func) {
+    while (this.hasNext())
+        func(this.next());
+},
+	"map" : function(func) {
+    var a = [];
+    while (this.hasNext())
+        a.push(func(this.next()));
+    return a;
+},
+	"itcount" : function() {
+    var num = 0;
+
+    // Track how many bytes we've used this cursor to iterate iterated.  This function can be called
+    // with some very large cursors.  SpiderMonkey appears happy to allow these objects to
+    // accumulate, so regular gc() avoids an overly large memory footprint.
+    //
+    // TODO: migrate this function into c++
+    var bytesSinceGC = 0;
+
+    while (this.hasNext()) {
+        num++;
+        var nextDoc = this.next();
+        bytesSinceGC += Object.bsonsize(nextDoc);
+
+        // Garbage collect every 10 MB.
+        if (bytesSinceGC > (10 * 1024 * 1024)) {
+            bytesSinceGC = 0;
+            gc();
+        }
+    }
+    return num;
+},
+	"shellPrint" : function() {
+    try {
+        var start = new Date().getTime();
+        var n = 0;
+        while (this.hasNext() && n < DBQuery.shellBatchSize) {
+            var s = this._prettyShell ? tojson(this.next()) : tojson(this.next(), "", true);
+            print(s);
+            n++;
+        }
+        if (typeof _verboseShell !== 'undefined' && _verboseShell) {
+            var time = new Date().getTime() - start;
+            print("Fetched " + n + " record(s) in " + time + "ms");
+        }
+        if (this.hasNext()) {
+            print("Type \"it\" for more");
+            ___it___ = this;
+        } else {
+            ___it___ = null;
+        }
+    } catch (e) {
+        print(e);
+    }
+},
+	"pretty" : function() {
+    this._prettyShell = true;
+    return this;
+}
+}
